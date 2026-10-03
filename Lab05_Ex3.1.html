@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Lợi ích của công nghệ số trong học tập</title>
+    <title>Giới thiệu bản thân | Lab05</title>
 
     <style>
         * {
@@ -36,6 +36,49 @@
             font-size: 18px;
             color: #444;
             margin: 0 0 30px;
+        }
+
+        .profile,
+        .product {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        .profile p {
+            color: #444;
+            line-height: 1.7;
+            margin: 8px 0;
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 16px;
+        }
+
+        .product h3 {
+            margin: 0 0 12px;
+            color: #0d4385;
+        }
+
+        .product p {
+            color: #444;
+            line-height: 1.5;
+        }
+
+        .product img {
+            display: block;
+            width: 100%;
+            height: auto;
+            margin: 12px 0;
+            border: 1px solid #ddd;
+        }
+
+        .product a {
+            color: #0d65c2;
+            font-weight: bold;
         }
 
         h2 {
@@ -125,12 +168,46 @@
 <body>
     <div class="container">
 
-        <h1>Lợi ích của công nghệ số trong học tập</h1>
+        <h1>Giới thiệu bản thân</h1>
 
         <p class="intro">
-            Học tập linh hoạt hơn, chủ động hơn, kết nối hơn
-            nhờ ứng dụng công nghệ số.
+            Thông tin cá nhân và các sản phẩm học tập của mình trong Lab05.
         </p>
+
+        <h2>Thông tin cá nhân</h2>
+        <section class="profile">
+            <p><strong>Họ và tên:</strong> Phan Thị Ngọc Trâm</p>
+            <p><strong>Mã số sinh viên:</strong> B2605476</p>
+            <p><strong>Lớp học phần:</strong> CT005-D05</p>
+            <p>
+                Mình là sinh viên đang học tập và thực hành các kỹ năng tin học.
+                Trang này giới thiệu một số sản phẩm mình đã thực hiện trong Lab05.
+            </p>
+        </section>
+
+        <h2>Sản phẩm Lab05</h2>
+        <section class="products" aria-label="Các sản phẩm đã thực hiện trong Lab05">
+            <article class="product">
+                <h3>Nhiệm vụ 1.2: PDF</h3>
+                <p>Tài liệu PDF của nhiệm vụ 1.2.</p>
+                <a href="Lab05_Ex1.2.pdf" target="_blank" rel="noopener noreferrer">Mở file PDF</a>
+            </article>
+
+            <article class="product">
+                <h3>Nhiệm vụ 2.1: PNG</h3>
+                <p>Ảnh sản phẩm của nhiệm vụ 2.1:</p>
+                <a href="Lab05_Ex2.1.png" target="_blank" rel="noopener noreferrer">
+                    <img src="Lab05_Ex2.1.png" alt="Sản phẩm PNG của nhiệm vụ 2.1">
+                    Mở ảnh kích thước đầy đủ
+                </a>
+            </article>
+
+            <article class="product">
+                <h3>Nhiệm vụ 3.1: HTML</h3>
+                <p>Trang HTML hiện tại, có thể mở trong tab mới.</p>
+                <a href="Lab05_Ex3.1.html" target="_blank" rel="noopener noreferrer">Mở sản phẩm HTML</a>
+            </article>
+        </section>
 
         <!-- PHẦN 1: INFOGRAPHIC ĐƯỢC NHÚNG TRỰC TIẾP TRONG HTML -->
         <h2>1. Infographic</h2>
